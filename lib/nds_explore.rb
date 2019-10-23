@@ -34,7 +34,7 @@ def print_first_directors_movie_titles
         element += 1  
       end
     else
-      
+
     end
     row += 1
   end
