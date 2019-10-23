@@ -7,18 +7,6 @@ def pretty_print_nds(nds)
   pp nds
 end
 
-p directors_database.count
-
-p directors_database[0][:name]
-
-p directors_database[0][:movies].count
-
-p directors_database[0][:movies][0][:title]
-p directors_database[0][:movies][1][:title]
-p directors_database[0][:movies][2][:title]
-p directors_database[0][:movies][3][:title]
-p directors_database[0][:movies][4][:title]
-p directors_database[0][:movies][5][:title]
 
 def print_first_directors_movie_titles
   nds = directors_database
