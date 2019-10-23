@@ -31,7 +31,7 @@ def print_first_directors_movie_titles
       while element < nds[row][:movies].count do
 #        speilbergMovies << nds[row][:movies][element][:title]
           p nds[row][:movies][element][:title]
-        element += 1  
+        element += 1
       end
     else
 
