@@ -23,20 +23,16 @@ p directors_database[0][:movies][5][:title]
 def print_first_directors_movie_titles
   nds = directors_database
   row = 0
-#  speilbergMovies = []
-
   while row < nds.count do
     if nds[row][:name] == "Stephen Spielberg"
       element = 0
       while element < nds[row][:movies].count do
-#        speilbergMovies << nds[row][:movies][element][:title]
           p nds[row][:movies][element][:title]
         element += 1
       end
-    else
+#    else
 
     end
     row += 1
   end
-#  p speilbergMovies
 end
