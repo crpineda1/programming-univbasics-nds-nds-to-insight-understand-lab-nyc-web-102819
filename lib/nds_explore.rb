@@ -38,5 +38,5 @@ def print_first_directors_movie_titles
     end
     row += 1
   end
-  p speilbergMovies
+#  p speilbergMovies
 end
