@@ -7,7 +7,7 @@ def pretty_print_nds(nds)
   pp nds
 end
 
-
+p directors_database[0].count
 
 p directors_database[0][:name]
 
@@ -25,14 +25,14 @@ p directors_database[0][:movies][5][:title]
 def print_first_directors_movie_titles
   nds = directors_database
   row = 0
-  speilbergMovies = []
+#  speilbergMovies = []
 
   while row < nds.count do
     if nds[row][:name] == "Stephen Spielberg"
       element = 0
       while element < nds[row][:movies].count do
-        speilbergMovies << nds[row][:movies][element][:title]
-#          p nds[row][:movies][element][:title]
+#        speilbergMovies << nds[row][:movies][element][:title]
+          p nds[row][:movies][element][:title]
         element += 1
       end
     else
