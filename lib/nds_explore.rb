@@ -27,7 +27,7 @@ def print_first_directors_movie_titles
     if nds[row][:name] == "Stephen Spielberg"
       element = 0
       while element < nds[row][:movies].count do
-          p nds[row][:movies][element][:title]
+          puts nds[row][:movies][element][:title]
         element += 1
       end
 #    else
