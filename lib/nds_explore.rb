@@ -1,11 +1,13 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 # Call the method directors_database to retrieve the NDS
-#require 'pp'
+require 'pp'
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
   pp nds
 end
+
+
 
 p directors_database[0][:name]
 
@@ -24,7 +26,6 @@ def print_first_directors_movie_titles
   nds = directors_database
   row = 0
   speilbergMovies = []
-#pp direcotors_database[0][:movies][0][:title]
 
   while row < nds.count do
     if nds[row][:name] == "Stephen Spielberg"
